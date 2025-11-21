@@ -12,21 +12,6 @@ import os
 # FUNCIONES (pantallas vacías por ahora)
 # -------------------------
 def abrir_registro_productos():
-   messagebox.showinfo("Registro de Productos", "Aquí irá el módulo de registro de productos.")
-
-def abrir_registro_productos():
-   messagebox.showinfo("Registro de Productos", "Aquí irá el módulo de registro de productos.")
-
-def abrir_registro_ventas():
-   messagebox.showinfo("Registro de Ventas", "Aquí irá el módulo de registro de ventas.")
-
-def abrir_reportes():
-   messagebox.showinfo("Reportes", "Aquí irá el módulo de reportes.")
-
-def abrir_acerca_de():
-   messagebox.showinfo("Acerca de", "Punto de Venta de Ropa\nProyecto Escolar\nVersión 1.0")
-
-def abrir_registro_productos():   
    reg = tk.Toplevel()
    reg.title("Registro de Productos")
    reg.geometry("400x400")
@@ -81,6 +66,18 @@ def abrir_registro_productos():
    # --- Botón Guardar ---
    btn_guardar = tk.Button(reg, text="Guardar Producto", command=guardar_producto)
    btn_guardar.pack(pady=20)
+
+def abrir_registro_ventas():
+   messagebox.showinfo("Registro de Ventas", "Aquí irá el módulo de registro de ventas.")
+
+def abrir_reportes():
+   messagebox.showinfo("Reportes", "Aquí irá el módulo de reportes.")
+
+def abrir_acerca_de():
+   messagebox.showinfo("Acerca de", "Punto de Venta de Ropa\nProyecto Escolar\nVersión 1.0")
+
+
+  
 
 # -------------------------
 # VENTANA PRINCIPAL
@@ -137,4 +134,5 @@ btn_acerca.pack(pady=10)
 # -------------------------
 # INICIO DE LA APP
 # -------------------------
+
 ventana.mainloop()
